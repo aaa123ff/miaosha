@@ -151,7 +151,7 @@ public class GoodsController {
 		GoodsDetailVo vo = new GoodsDetailVo();
 
 		System.out.println(vo + "hot-fix");
-		System.out.println(vo + "hot-fix 22 33");
+		System.out.println(vo + "hot-fix 22");
 		vo.setGoods(goods);
 		vo.setUser(user);
 		vo.setRemainSeconds(remainSeconds);
