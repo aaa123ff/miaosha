@@ -37,6 +37,8 @@ public class GoodsController {
 	@Autowired
 	ThymeleafViewResolver thymeleafViewResolver;
 
+
+
 	// 未优化前：20000 吞吐量3363  6.10   这里的优化指什么来着，好像是页面缓存优化
 	// 优化后：20000   8748 0.00%   对象缓存有没有作用？提高吞吐量？
 	@RequestMapping(value="/to_list", produces="text/html")
@@ -120,6 +122,7 @@ public class GoodsController {
 		}
 		return html;
 		// return "goods_detail";
+
 	}
 
 	// URL缓存？
@@ -146,6 +149,9 @@ public class GoodsController {
 			remainSeconds = 0;
 		}
 		GoodsDetailVo vo = new GoodsDetailVo();
+
+		System.out.println(vo);
+
 		vo.setGoods(goods);
 		vo.setUser(user);
 		vo.setRemainSeconds(remainSeconds);
