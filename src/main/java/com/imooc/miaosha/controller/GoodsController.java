@@ -150,7 +150,7 @@ public class GoodsController {
 		}
 		GoodsDetailVo vo = new GoodsDetailVo();
 
-		System.out.println(vo);
+		System.out.println(vo + "hot-fix");
 
 		vo.setGoods(goods);
 		vo.setUser(user);
